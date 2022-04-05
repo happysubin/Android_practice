@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity"
+   >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="도서 예약 시스템"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="30dp"
+        android:background="#DFDCDC"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView3"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textView3"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textView4"
+            android:ems="10"
+            android:inputType="textPassword"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:layout_alignStart="@id/editText2"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ok_btn"
+            android:text="Log-in"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button3"
+            android:layout_alignEnd="@id/editText2"
+            android:drawableLeft="@drawable/cancel_btn"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+</RelativeLayout>
